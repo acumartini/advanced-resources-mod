@@ -10,9 +10,9 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the nessasary things for Forge to be setup.
 
-version = "1.11a"
-group= "thegreyghost" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "minecraftbyexample"
+version = "1.0"
+group= "advancedresources" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "advancedresources"
 
 sourceCompatibility = targetCompatibility = "1.6" // Need this here so eclipse task generates correctly.
 compileJava {

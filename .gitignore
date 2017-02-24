@@ -2,3 +2,5 @@
 .gitignore
 .idea/
 build/
+classes/
+run/
