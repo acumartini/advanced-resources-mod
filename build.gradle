@@ -7,14 +7,15 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
+
 apply plugin: 'net.minecraftforge.gradle.forge'
-//Only edit below this line, the above code adds and enables the nessasary things for Forge to be setup.
+apply plugin: 'scala'
 
 version = "1.0"
-group= "advancedresources" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group= "busted" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "advancedresources"
 
-sourceCompatibility = targetCompatibility = "1.6" // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = "1.6"
 compileJava {
     sourceCompatibility = targetCompatibility = "1.6"
 }
@@ -57,8 +58,7 @@ dependencies {
 
 }
 
-processResources
-{
+processResources {
     // this will ensure that this task is redone when the versions change.
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
